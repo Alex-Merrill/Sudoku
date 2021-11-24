@@ -1,6 +1,7 @@
 import sys
 import itertools
 import argparse
+import tkinter as tk
 
 
 class bcolors:
@@ -18,7 +19,7 @@ class bcolors:
 parser = argparse.ArgumentParser(
     description=f"{bcolors.WARNING}Sudoku sum combinations{bcolors.ENDC}")
 parser.add_argument(
-    "-f", type=str, help=f"{bcolors.OKBLUE}Filter sums including ['inc'] or excluding ['exc]. Default 'none'{bcolors.ENDC}", default="none")
+    "-f", type=str, help=f"{bcolors.OKBLUE}Filter sums including ['inc'] or excluding ['exc']. Default 'none'{bcolors.ENDC}", default="none")
 parser.add_argument("-fnums", type=int, nargs='+',
                     help=f"{bcolors.OKCYAN}list of numbers to include in filter{bcolors.ENDC}")
 parser.add_argument("sum", type=int, help=f"{bcolors.OKCYAN}Sum{bcolors.ENDC}")
