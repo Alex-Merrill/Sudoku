@@ -1,6 +1,4 @@
-import sys
 import itertools
-import argparse
 import tkinter as tk
 
 # gets combos
