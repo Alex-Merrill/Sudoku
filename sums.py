@@ -1,7 +1,6 @@
 import sys
 import itertools
 import argparse
-import tkinter as tk
 
 
 class bcolors:
@@ -76,6 +75,8 @@ if __name__ == "__main__":
 
     # run get_all_combos
     ret = get_all_combos(args.sum, args.d, args.f, args.fnums)
+
+    print(args.sum, args.d, args.f, args.fnums)
 
     # print results
     filter_msg = f" and include {args.fnums}" if args.f == 'inc' else f"and exclude {args.fnums}"
